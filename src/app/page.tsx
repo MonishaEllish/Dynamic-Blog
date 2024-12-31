@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import BlogList from './components/BlogList'
 import blogPosts from './lib/BlogData'
+import Footer from './components/Foooter'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold  mb-6">Latest Blog Posts</h1>
         <BlogList posts={blogPosts} />
       </main>
+      <Footer/>
     </div>
   )
 }
