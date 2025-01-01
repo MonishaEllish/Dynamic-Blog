@@ -2,7 +2,12 @@
 
 import { useState } from 'react'
 import Header from '../components/Header'
-import { FaGithub, FaLinkedin, FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
+
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ContactPage() {
   const [name, setName] = useState('')
@@ -32,15 +37,15 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
               <div className="space-y-4">
                 <p className="flex items-center">
-                  <FaMapMarkerAlt  />
+                <FaMapMarkerAlt />
                   123 Web Dev Street, Coding City, 12345
                 </p>
                 <p className="flex items-center">
-                  <FaPhone/>
+                <FaPhoneAlt />
                   (000) 000-0000
                 </p>
                 <p className="flex items-center">
-                  <FaEnvelope  />
+                <FaEnvelope />
                   monishashakeel99@gmail.com
                 </p>
               </div>
@@ -48,11 +53,11 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold mb-4">Connect with me</h3>
                 <div className="flex space-x-4">
                   <a href="https://github.com/MonishaEllish" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition duration-300">
-                    <FaGithub size={24} />
+                  <FaGithub size={24} />
                     <span className="sr-only">GitHub</span>
                   </a>
                   <a href="https://www.linkedin.com/in/monisha-ellish-604632317" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 transition duration-300">
-                    <FaLinkedin size={24} />
+                  <FaLinkedin  size={24}/>
                     <span className="sr-only">LinkedIn</span>
                   </a>
                 </div>
